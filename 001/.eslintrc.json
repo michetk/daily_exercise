@@ -13,14 +13,10 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
-<<<<<<< HEAD
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
     "react/function-component-definition": "off"
   }
-=======
-  "rules": {}
->>>>>>> 6860e129d925887e5da09762246bc2b34cbd7cdb
 }
