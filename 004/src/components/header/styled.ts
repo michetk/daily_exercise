@@ -10,3 +10,14 @@ export const HeaderContainer = styled.header`
 export const HeaderTitle = styled.div`
   margin: auto;
 `
+export const HeaderIcon = styled.div`
+  padding: 10px;
+
+  & svg {
+    height: 30px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+`
