@@ -5,3 +5,11 @@ export const DashboardLayoutContainer = styled.div`
   flex-direction: column;
   min-height: 100vh;
 `
+export const DashboardLayoutContent = styled.div`
+  display: flex;
+  flex: 1;
+`
+
+export const DashboardLayoutPage = styled.div`
+  display: flex;
+`

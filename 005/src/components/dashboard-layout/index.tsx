@@ -1,8 +1,20 @@
+import Footer from '../footer'
+import Header from '../header'
+import Sidebar from '../sidebar'
 import { DashboardLayoutProps } from './interfaces'
-import { DashboardLayoutContainer } from './styled'
+import { DashboardLayoutContainer, DashboardLayoutContent } from './styled'
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
-  return <DashboardLayoutContainer>{children}</DashboardLayoutContainer>
+  return (
+    <DashboardLayoutContainer>
+      <Header />
+      <DashboardLayoutContent>
+        <Sidebar />
+        {children}
+      </DashboardLayoutContent>
+      <Footer />
+    </DashboardLayoutContainer>
+  )
 }
 
 export default DashboardLayout
