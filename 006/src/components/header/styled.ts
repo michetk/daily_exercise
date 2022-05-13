@@ -10,3 +10,11 @@ export const HeaderContainer = styled.header`
 export const HeaderTitle = styled.div`
   margin: auto;
 `
+
+export const HeaderIconToggle = styled.div`
+  margin-left: 10px;
+
+  & svg {
+    height: 30px;
+  }
+`
