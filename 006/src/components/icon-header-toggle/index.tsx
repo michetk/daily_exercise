@@ -1,8 +1,10 @@
 import { Menu, ChevronLeft } from '@styled-icons/material'
-import { useIconHeaderToggleContext } from '../../hooks/module/use-icon-header-toggle'
+import { useContext } from 'react'
+import { IconHeaderToggleContext } from '../../contexts/icon-header-toggle'
+// import { useToggle } from '../../hooks/global/use-toggle'
 
 const IconHeaderToggle = () => {
-  const [isExpanded, setExpanded] = useIconHeaderToggleContext()
+  const [isExpanded, setExpanded] = useContext(IconHeaderToggleContext)
 
   return isExpanded ? (
     <ChevronLeft onClick={setExpanded} />

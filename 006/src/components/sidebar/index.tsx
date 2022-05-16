@@ -1,10 +1,11 @@
+import { useContext } from 'react'
 import { ITEM_LIST } from '../../constants/menu/menu-list'
-import { useIconHeaderToggleContext } from '../../hooks/module/use-icon-header-toggle'
+import { IconHeaderToggleContext } from '../../contexts/icon-header-toggle'
 import MenuList from '../menu-list'
 import { SidebarContainer } from './styled'
 
 const Sidebar = () => {
-  const [isExpanded] = useIconHeaderToggleContext()
+  const [isExpanded] = useContext(IconHeaderToggleContext)
   return (
     <SidebarContainer isExpanded={isExpanded}>
       <MenuList list={ITEM_LIST} />
