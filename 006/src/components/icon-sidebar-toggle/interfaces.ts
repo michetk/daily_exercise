@@ -1,3 +1,3 @@
 export interface IconSidebarToggleProps {
-  onClick: () => void
+  alternateFunction?: () => void
 }

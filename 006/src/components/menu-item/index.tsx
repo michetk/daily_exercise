@@ -3,7 +3,7 @@ import { useToggle } from '../../hooks/global/use-toggle'
 import IconSidebarToggle from '../icon-sidebar-toggle'
 import MenuList from '../menu-list'
 import { MenuItemProps } from './interfaces'
-import { MenuItemContainer } from './styled'
+import { Item, MenuItemContainer } from './styled'
 
 const MenuItem = ({
   MenuItem: { name, icon: Icon, url, depth, subItems },
@@ -12,13 +12,17 @@ const MenuItem = ({
 
   return (
     <MenuItemContainer depth={depth}>
-      <Link href={url} passHref>
-        <div>
-          <Icon />
-          <span>{name}</span>
-          {subItems ? <IconSidebarToggle onClick={setExpanded} /> : undefined}
-        </div>
-      </Link>
+      <Item>
+        <Link href={url} passHref>
+          <div className="link-item">
+            <Icon />
+            <span>{name}</span>
+          </div>
+        </Link>
+        {subItems ? (
+          <IconSidebarToggle alternateFunction={setExpanded} />
+        ) : undefined}
+      </Item>
       {subItems && isExpanded ? <MenuList list={subItems} /> : undefined}
     </MenuItemContainer>
   )

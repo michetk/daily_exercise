@@ -1,1 +1,3 @@
-export type UseToggleHook = () => [boolean, () => void]
+export type UseToggleHook = (
+  alternateFunction?: () => void
+) => [boolean, () => void]
