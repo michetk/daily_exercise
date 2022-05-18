@@ -4,6 +4,7 @@ export const MenuItemContainer = styled.div<{ depth: number }>`
   display: flex;
   flex-direction: column;
   margin: 10px 0px 10px ${({ depth }) => `${depth}rem`};
+  user-select: none;
 `
 export const Item = styled.div`
   display: flex;

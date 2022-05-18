@@ -5,6 +5,7 @@ export const HeaderContainer = styled.header`
   justify-content: center;
   align-items: center;
   height: 10vh;
+  user-select: none;
 `
 
 export const HeaderTitle = styled.div`
@@ -16,5 +17,6 @@ export const HeaderIconToggle = styled.div`
 
   & svg {
     height: 30px;
+    cursor: pointer;
   }
 `
