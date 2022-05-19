@@ -6,6 +6,8 @@ export const HeaderContainer = styled.header`
   align-items: center;
   height: 10vh;
   user-select: none;
+  background: ${({ theme }) => theme.colors.primary.main};
+  color: ${({ theme }) => theme.colors.text.light_100};
 `
 
 export const HeaderTitle = styled.div`
@@ -18,5 +20,6 @@ export const HeaderIconToggle = styled.div`
   & svg {
     height: 30px;
     cursor: pointer;
+    animation: ${({ theme }) => theme.animations.fadein} 0.5s ease;
   }
 `
