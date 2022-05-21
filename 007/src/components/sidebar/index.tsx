@@ -1,5 +1,7 @@
+import { MENU_LIST } from '../../constants/menu/menu-list'
 import { IconHeaderToggleContext } from '../../contexts/icon-header-toggle'
 import { useToggle } from '../../hooks/use-toggle'
+import MenuList from '../menu-list'
 import { SidebarContainer, SidebarContent } from './styled'
 
 const Sidebar = () => {
@@ -8,7 +10,7 @@ const Sidebar = () => {
   return (
     <SidebarContainer isExpanded={isExpanded}>
       <SidebarContent>
-        <div>Sidebar</div>
+        <MenuList list={MENU_LIST} />
       </SidebarContent>
     </SidebarContainer>
   )
