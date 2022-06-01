@@ -7,6 +7,7 @@ export const SidebarContainer = styled.aside<{ isExpanded: boolean }>`
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: width 0.5s ease-in-out;
+  user-select: none;
 `
 
 export const SidebarContent = styled.div`
