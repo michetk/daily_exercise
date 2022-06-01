@@ -5,6 +5,7 @@ export const HeaderContainer = styled.header`
   justify-content: center;
   align-items: center;
   min-height: 50px;
+  background-color: ${({ theme }) => theme.colors.primary.blue.main};
 `
 
 export const HeaderTitle = styled.div`
